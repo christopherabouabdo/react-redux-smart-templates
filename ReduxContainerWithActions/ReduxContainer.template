@@ -1,0 +1,14 @@
+'use strict'
+
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import <%= Component %> from '<%= PathToComponentDir %>/<%= Component %>'
+import * as <%= Actions %> from '<%= PathToActionsDir %>/<%= Actions %>'
+
+const mapStateToProps = (state, props) => {
+  return { }
+}
+
+const mapDispatchToProps = (dispatch) => bindActionCreators(<%= Actions %>, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(<%= Component %>)

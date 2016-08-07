@@ -1,0 +1,10 @@
+'use strict'
+
+import { connect } from 'react-redux'
+import <%= Component %> from '<%= PathToComponentDir %>/<%= Component %>'
+
+const mapStateToProps = (state, props) => {
+  return { }
+}
+
+export default connect(mapStateToProps)(<%= Component %>)
